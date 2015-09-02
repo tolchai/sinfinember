@@ -1,0 +1,21 @@
+html {
+	font-family: sans-serif;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+h2 {
+	font-size: 1.25em;
+	margin: 0 0 0.5em
+}
+
+.book-list > div {
+	margin-bottom: 2em;
+}
+
+.author-name {
+	color: #999;
+}

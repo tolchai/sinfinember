@@ -1,0 +1,12 @@
+{{#if isOpenForm}}
+	{{input type="text" placeholder="Titul"}}
+	{{input type="text" placeholder="Autor"}}
+{{else}}
+	<label {{action "openForm" on="doubleClick"}}>Přidat novou knihu</label>
+ {{/if}}
+
+<div class="book-list">
+{{#each book in model}}
+    {{book-item book=book}}
+{{/each}}
+</div>
