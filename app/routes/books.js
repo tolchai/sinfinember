@@ -5,9 +5,5 @@ export default Ember.Route.extend({
         return this.store.find('book');
     },
     actions: {
-        openForm: function() {
-            this.controllerFor('books').set('isOpenForm', true);
-            return false;
-        }
-    }    
+    }
 });

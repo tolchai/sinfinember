@@ -1,2 +1,12 @@
-<div class="book-item"><h2>{{book.title}}</h2>
-<span class="author-name">{{book.author}}</span></div>
+{{#if isEditing }}
+  <form {{action 'save' on='submit'}}>
+  {{input value=book.title}}
+  <br>
+  {{input value=book.author}}
+  <br>
+  <input type='submit' value='Save'>
+  </form>
+{{else}}
+<h2>{{book.title}}</h2>
+<span class="author-name">{{book.author}}</span>
+{{/if}}

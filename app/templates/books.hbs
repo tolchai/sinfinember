@@ -5,8 +5,8 @@
 	<label {{action "openForm" on="doubleClick"}}>Přidat novou knihu</label>
  {{/if}}
 
-<div class="book-list">
-{{#each book in model}}
+<ul class="book-list">
+  {{#each book in model}}
     {{book-item book=book}}
-{{/each}}
-</div>
+  {{/each}}
+</ul>
